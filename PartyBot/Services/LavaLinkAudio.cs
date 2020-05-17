@@ -203,7 +203,7 @@ namespace PartyBot.Services
                         /* Skip the current song. */
                         await player.SkipAsync();
                         await LoggingService.LogInformationAsync("Music", $"Bot skipped: {currentTrack.Title}");
-                        return await EmbedHandler.CreateBasicEmbed("Music Skip", $"I have successfully skiped {currentTrack.Title}", Color.Blue);
+                        return await EmbedHandler.CreateBasicEmbed("Music Skip", $"I have successfully skipped {currentTrack.Title}", Color.Blue);
                     }
                     catch (Exception ex)
                     {
